@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx-rtmp-multi-stream:
+    container_name: nginx-rtmp-multi-stream
+    image: nginx-rtmp-multi-stream:latest
+    ports:
+      - '1935:1935'
+    build:
+      context: .
+      dockerfile: Dockerfile
