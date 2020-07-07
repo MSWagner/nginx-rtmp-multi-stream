@@ -16,9 +16,9 @@ Install OBS: https://obsproject.com
 - Open your terminal, go into the nginx-rtmp-multi-stream folder and enter: ```docker-compose up```
 
 #### 3. Edit the stream settings in OBS:
-  - Set Service to Custom
+  - Set service to custom
   - Enter as Server: rtmp://0.0.0.0/live
-  - Use a custom Stream Key you want
+  - Use a custom stream key you want
   
 ## Credits
 - [Sebastián Ramírez](https://github.com/tiangolo)
