@@ -12,8 +12,14 @@ Install OBS: https://obsproject.com
 - Remove push rtmp://... lines if you don't want to use this provider (or add other ones below the lines)
 - Replace streamkey with the key from your provider
 
-#### 2. Start the rtmp server:
-- Open your terminal, go into the nginx-rtmp-multi-stream folder and enter: ```docker-compose up```
+#### 2a. Start the rtmp server:
+- Open your terminal, go into the nginx-rtmp-multi-stream folder
+- Start the rtmp server with the current providers: ```docker-compose up --build```
+
+#### 2b. Update the rtmp server:
+- Stop the server
+- Edit the nginx.conf file
+- Restart the rtmp server with the current providers: ```docker-compose up --build```
 
 #### 3. Edit the stream settings in OBS:
   - Set service to custom
